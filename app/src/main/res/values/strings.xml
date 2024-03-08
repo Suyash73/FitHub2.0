@@ -15,7 +15,7 @@
     <string name="gymsubheading">
         Start Workout
     </string>
-<!--
+    <!--
     //// YOGA STRINGS
 -->
     <string name="YogaHeading">
@@ -36,6 +36,12 @@ Login here
     <string name="welcome_bac">
             Welcome back you\'ve\nbeen missed!
         </string>
+    <string name="signup">
+        Create Account
+    </string>
+    <string name="signup_content">
+        Get inspired, get fit! \nCreate an account to explore.
+    </string>
 
 
 </resources>
