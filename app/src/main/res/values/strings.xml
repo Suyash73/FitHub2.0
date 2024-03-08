@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FitHub2.0</string>
+    <string name="gymError">
+    Error in Loading Image
+  </string>
+    <string name="GymHeading">
+    Warm Up with Dumbbell
+  </string>
+    <string name="gymcontent">
+    Get your body ready for a great workout
+  </string>
+    <string name="gymsubheading">
+        Start Workout
+    </string>
+
+    <string name="YogaHeading">
+    Yoga for Beginners
+  </string>
+    <string name="Yogacontent">Learn the basics of yoga in a safe and supportive environment.
+  </string>
+    <string name="Yogasubheading">
+        Featured
+    </string>
+</resources>
