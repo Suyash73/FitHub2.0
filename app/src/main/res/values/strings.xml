@@ -42,6 +42,10 @@ Login here
     <string name="signup_content">
         Get inspired, get fit! \nCreate an account to explore.
     </string>
+    <string name="welcome_context">Discover Your\nStrength With Us
+    </string>
+
+    <string name="welcome_context2">Explore a vast library of workouts and discover new ways to move your body.</string>
 
 
 </resources>
