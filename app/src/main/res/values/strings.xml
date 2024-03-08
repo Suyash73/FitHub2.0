@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">FitHub2.0</string>
+    <!--
+    //// GYM STRINGS
+-->
     <string name="gymError">
     Error in Loading Image
   </string>
@@ -12,7 +15,9 @@
     <string name="gymsubheading">
         Start Workout
     </string>
-
+<!--
+    //// YOGA STRINGS
+-->
     <string name="YogaHeading">
     Yoga for Beginners
   </string>
@@ -21,4 +26,16 @@
     <string name="Yogasubheading">
         Featured
     </string>
+
+    <!--
+    //// LOGIN & REGISTRATION STRINGS
+-->
+    <string name="login_here">
+Login here
+</string>
+    <string name="welcome_bac">
+            Welcome back you\'ve\nbeen missed!
+        </string>
+
+
 </resources>

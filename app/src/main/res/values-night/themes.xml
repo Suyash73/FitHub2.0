@@ -3,5 +3,6 @@
     <style name="Base.Theme.FitHub20" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
     </style>
 </resources>
