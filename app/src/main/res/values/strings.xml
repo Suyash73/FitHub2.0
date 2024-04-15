@@ -46,6 +46,9 @@ Login here
     </string>
 
     <string name="welcome_context2">Explore a vast library of workouts and discover new ways to move your body.</string>
-
+    <!--
+    Start Exercise button text
+    -->
+    <string name="gymBtn">Start Exercise</string>
 
 </resources>
