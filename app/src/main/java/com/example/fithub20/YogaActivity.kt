@@ -8,9 +8,10 @@ import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class YogaActivity : AppCompatActivity() {
-
+    private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var yogaAdapter: YogaAdapter
     private lateinit var yogarecyclerView: RecyclerView
     private var initialX: Float = 0f
@@ -29,6 +30,30 @@ class YogaActivity : AppCompatActivity() {
         yogarecyclerView.layoutManager = LinearLayoutManager(this)
         findViewById<View>(android.R.id.content).setOnTouchListener { _, event ->
             handleTouchEvent(event)
+        }
+
+        bottomNavigationView = findViewById(R.id.bottomNav)
+        bottomNavigationView.setSelectedItemId(R.id.idYoga)
+
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.idGym -> {
+                    val a = Intent(this@YogaActivity, GymActivity::class.java)
+                    startActivity(a)
+                    overridePendingTransition(0,0)
+                }
+                R.id.idBot -> {
+                    //val a = Intent(this@YogaActivity, SongSearch::class.java)
+                    //startActivity(a)
+                    //overridePendingTransition(0,0)
+                }
+                R.id.idProfile -> {
+                    //val b = Intent(this@YogaActivity, Chats::class.java)
+                    //startActivity(b)
+                    //overridePendingTransition(0,0)
+                }
+            }
+            false
         }
 
     }

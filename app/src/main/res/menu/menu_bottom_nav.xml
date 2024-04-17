@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/idGym"
+        android:title="Gym"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icons8_dumbbell_64"/>
+
+    <item
+        android:id="@+id/idYoga"
+        android:title="Yoga"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icons8_yoga_50"/>
+
+    <item
+        android:id="@+id/idBot"
+        android:title="Chat"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_chat_24"/>
+
+    <item
+        android:id="@+id/idProfile"
+        android:title="Profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_person_24"/>
+
+</menu>

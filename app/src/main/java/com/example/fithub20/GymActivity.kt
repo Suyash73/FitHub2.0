@@ -9,12 +9,14 @@ import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class GymActivity : AppCompatActivity() {
 
     private var initialX: Float = 0f
     private lateinit var gymAdapter: GymAdapter
     private lateinit var gymrecyclerView: RecyclerView
+    private lateinit var bottomNavigationView: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +34,33 @@ class GymActivity : AppCompatActivity() {
         findViewById<View>(android.R.id.content).setOnTouchListener { _, event ->
             handleTouchEvent(event)
         }
+
+        bottomNavigationView = findViewById(R.id.bottomNav)
+        bottomNavigationView.setSelectedItemId(R.id.idGym)
+
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.idYoga -> {
+                    val a = Intent(this@GymActivity, YogaActivity::class.java)
+                    startActivity(a)
+                    overridePendingTransition(0,0)
+                }
+                R.id.idBot -> {
+                    //val a = Intent(this@YogaActivity, SongSearch::class.java)
+                    //startActivity(a)
+                    //overridePendingTransition(0,0)
+                }
+                R.id.idProfile -> {
+                    //val b = Intent(this@YogaActivity, Chats::class.java)
+                    //startActivity(b)
+                    //overridePendingTransition(0,0)
+                }
+            }
+            false
+        }
+
+
+
 
     }
 
