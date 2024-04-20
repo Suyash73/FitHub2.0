@@ -1,6 +1,7 @@
 package com.example.fithub20
 
 import android.app.Activity
+import android.content.Intent
 import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
@@ -28,6 +29,12 @@ class YogaAdapter(val context: Activity, val exerciseList: List<YogaExerciseData
         val resources: Resources = context.resources
         val resourceId: Int = resources.getIdentifier(currentExercise.imge, "drawable", context.packageName)
         holder.image.setImageResource(resourceId)
+        holder.itemView.setOnClickListener(){
+            val intent = Intent(context, YogaSelected::class.java)
+            intent.putExtra("selectedExercise", currentExercise.name)
+            intent.putExtra("selectedlevel", currentExercise.level)
+            context.startActivity(intent)
+        }
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){

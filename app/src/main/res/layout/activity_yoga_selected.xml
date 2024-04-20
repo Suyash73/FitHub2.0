@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GymSelected"
-    >
+    tools:context=".YogaSelected">
     <include
-        layout="@layout/selecteditem_toolbar"
+        layout="@layout/selecteditem_toolbar2"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
@@ -28,10 +27,10 @@
         />
 
     <Button
-        android:id="@+id/containedButton"
+        android:id="@+id/startButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/gymBtn"
+        android:text="@string/yogabtn"
         android:padding="16dp"
         android:background="@drawable/login_btn"
         android:layout_marginStart="16dp"
@@ -43,6 +42,5 @@
         app:layout_constraintStart_toStartOf="parent"
 
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

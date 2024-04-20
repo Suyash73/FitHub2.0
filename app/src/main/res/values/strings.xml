@@ -50,5 +50,12 @@ Login here
     Start Exercise button text
     -->
     <string name="gymBtn">Start Exercise</string>
+    <string name="title_activity_yoga_selected">YogaSelected</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="yogabtn">Start Yoga</string>
 
 </resources>
